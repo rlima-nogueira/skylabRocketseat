@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+         <title>Desafio 1 - Rockseat</title>
+    </head>
+
+    <body>
+        
+        <script>
+            
+            function descobreHabilidade(usuarios){
+                for (const usuario of usuarios) { //definiu uma constante para percorrer todos os itens dentro do array
+                     console.log(`O ${usuario.nome} possui as habilidades: ${usuario.habilidades.join(', ')}.`);
+                }
+            }
+            
+        
+
+            var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+                
+            descobreHabilidade(usuarios);
+            
+
+        </script>
+
+
+
+    </body>
+
+
+
+
+</html>
